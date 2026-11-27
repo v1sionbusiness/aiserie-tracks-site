@@ -17,12 +17,11 @@ https://v1sionbusiness.github.io/aiserie-tracks-site/
 The "Download APK" buttons link directly to the signed APK:
 
 ```
-https://github.com/ViztechStudios/aiserie-tracks/releases/latest/download/AiserieTracks-v4.2.0.apk
+https://github.com/ViztechStudios/aiserie-tracks/releases/download/v4.4.0/AiserieTracks-v4.4.0.apk
 ```
 
-(Update the filename in `index.html` when a new version is released — the
-`releases/latest/download/` URL only resolves while the filename matches the
-asset in the newest release.)
+(Currently pinned to the v4.4.0 "Polish & Poise" release — a tag-pinned URL
+like this never 404s. When v4.5.0 ships, bump the tag and filename in `index.html`.)
 
 ## Files
 
