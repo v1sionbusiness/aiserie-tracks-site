@@ -849,6 +849,38 @@ code {
   margin-top: 1px;
 }
 
+/* ----- App preview (screenshots) ----- */
+.shots-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+.shot {
+  margin: 0;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: 14px 14px 16px;
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+.shot:hover {
+  transform: translateY(-4px);
+  border-color: rgba(34, 211, 238, 0.35);
+  background: var(--glass-bg-strong);
+}
+.shot img {
+  width: 100%;
+  display: block;
+  border-radius: 28px;
+}
+.shot figcaption {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--frost-dim);
+}
+
 /* ----- Download ----- */
 .download-grid {
   display: grid;
@@ -919,12 +951,6 @@ code {
   justify-content: center;
 }
 .download-steps strong { color: var(--frost); }
-.download-foot {
-  text-align: center;
-  margin: 32px 0 0;
-  font-size: 0.9rem;
-  color: var(--frost-faint);
-}
 
 /* ----- FAQ ----- */
 .faq {
@@ -1091,6 +1117,7 @@ code {
   .feature-grid { grid-template-columns: repeat(2, 1fr); }
   .wallet-grid { grid-template-columns: repeat(4, 1fr); }
   .split-grid, .download-grid { grid-template-columns: 1fr; }
+  .shots-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-inner { grid-template-columns: 1fr; gap: 40px; }
 }
 
@@ -1138,6 +1165,10 @@ code {
   .wallet-tile { padding: 16px 8px; font-size: 12px; }
   .w-ico { width: 34px; height: 34px; font-size: 14px; }
 
+  .shots-grid { gap: 14px; }
+  .shot { padding: 10px 10px 12px; }
+  .shot figcaption { font-size: 0.8rem; }
+
   .split-card, .download-card { padding: 30px 24px; }
   .cta-inner { flex-direction: column; align-items: flex-start; text-align: left; }
   .cta-actions { width: 100%; }
@@ -1148,6 +1179,8 @@ code {
 @media (max-width: 420px) {
   .wallet-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-meta { grid-template-columns: repeat(2, 1fr); }
+  .shots-grid { grid-template-columns: 1fr; }
+  .shot img { max-width: 320px; margin: 0 auto; }
 }
 
 /* Reduced motion */
