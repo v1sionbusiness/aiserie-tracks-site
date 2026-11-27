@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0D3B27" />
+  <title>Aiserie Tracks — Personal Finance, Privately</title>
+  <meta name="description" content="A jungle-green personal finance tracker for Android, iPhone and the web. Budgets, wallets, receipt scanning and an on-device advisor — all private, no account required." />
+  <meta name="author" content="ViztechStudios" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aiserie Tracks — Personal Finance, Privately" />
+  <meta property="og:description" content="Budgets, wallets, receipt scanning and an on-device advisor — all on your device. No account, no cloud, no tracking." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://v1sionbusiness.github.io/aiserie-tracks-site/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Lora:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="logo.svg" />
+</head>
+<body>
+  <!-- Aurora background orbs -->
+  <div class="aurora" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <span class="grain"></span>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand" aria-label="Aiserie Tracks home">
+        <img src="logo.svg" alt="" class="brand-mark" width="36" height="36" />
+        <span class="brand-text">Aiserie<span class="brand-dot">.</span>Tracks</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#wallets">Wallets</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#download">Download</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-sm btn-primary" href="#download">Get the app</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">
+            <span class="dot"></span> v4.1.0 · Orbit &amp; Frost
+          </span>
+          <h1 class="hero-title">
+            Track every peso.<br/>
+            <span class="accent">Privately.</span>
+          </h1>
+          <p class="hero-sub">
+            A jungle-green personal finance tracker for Android, iPhone and the web.
+            Budgets, wallets, receipt scanning and an on-device advisor —
+            <strong>no account, no cloud, no tracking.</strong>
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary btn-lg" href="#download">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+              Download free
+            </a>
+            <a class="btn btn-ghost btn-lg" href="https://github.com/ViztechStudios/aiserie-tracks" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.5-.3-5.2-1.3-5.2-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.2 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5Z"/></svg>
+              View source
+            </a>
+          </div>
+
+          <ul class="hero-meta">
+            <li><strong>₱0</strong><span>Android APK</span></li>
+            <li><strong>₱0</strong><span>iPhone PWA</span></li>
+            <li><strong>22</strong><span>Bank tiles</span></li>
+            <li><strong>MIT</strong><span>Open source</span></li>
+          </ul>
+        </div>
+
+        <!-- Phone mockup -->
+        <div class="hero-mockup reveal" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="app-aurora">
+                <span class="a-orb a1"></span>
+                <span class="a-orb a2"></span>
+              </div>
+              <div class="app-top">
+                <div class="app-hello">Hello, Aiserie</div>
+                <div class="app-avatar"><img src="logo.svg" alt="" width="28" height="28" /></div>
+              </div>
+              <div class="app-card glass">
+                <div class="app-card-label">Safe to spend today</div>
+                <div class="app-card-value">₱ 2,480<span>.00</span></div>
+                <div class="app-card-foot">
+                  <span class="chip up">+₱1,200 in</span>
+                  <span class="chip down">−₱840 out</span>
+                </div>
+              </div>
+              <div class="app-row">
+                <div class="app-tile glass">
+                  <div class="app-tile-ico" style="--c:#22D3EE"> wallets </div>
+                  <div class="app-tile-num">₱48,210</div>
+                  <div class="app-tile-lbl">Total balance</div>
+                </div>
+                <div class="app-tile glass">
+                  <div class="app-tile-ico" style="--c:#0EA5E9"> advisor </div>
+                  <div class="app-tile-num">68%</div>
+                  <div class="app-tile-lbl">Savings rate</div>
+                </div>
+              </div>
+              <div class="app-list glass">
+                <div class="app-list-head">Recent</div>
+                <div class="app-line">
+                  <span class="dot-cat" style="--c:#22D3EE"></span>
+                  <span class="app-line-name">Groceries · SM</span>
+                  <span class="app-line-amt down">−₱640</span>
+                </div>
+                <div class="app-line">
+                  <span class="dot-cat" style="--c:#0EA5E9"></span>
+                  <span class="app-line-name">Salary</span>
+                  <span class="app-line-amt up">+₱18,000</span>
+                </div>
+                <div class="app-line">
+                  <span class="dot-cat" style="--c:#34D399"></span>
+                  <span class="app-line-name">Coffee · Starbucks</span>
+                  <span class="app-line-amt down">−₱215</span>
+                </div>
+              </div>
+              <div class="app-tabbar">
+                <span class="tab active">Home</span>
+                <span class="tab">Wallets</span>
+                <span class="tab">Reports</span>
+                <span class="tab">More</span>
+              </div>
+            </div>
+          </div>
+          <div class="phone-glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust bar -->
+    <section class="trustbar">
+      <div class="container trustbar-inner">
+        <div class="trust-item reveal">
+          <span class="trust-ico">⚙</span>
+          <div><strong>Expo SDK 58</strong><span>React Native · TypeScript</span></div>
+        </div>
+        <div class="trust-item reveal">
+          <span class="trust-ico">📱</span>
+          <div><strong>Android · iOS · Web</strong><span>One codebase, three platforms</span></div>
+        </div>
+        <div class="trust-item reveal">
+          <span class="trust-ico">🔒</span>
+          <div><strong>On-device only</strong><span>AsyncStorage · localStorage</span></div>
+        </div>
+        <div class="trust-item reveal">
+          <span class="trust-ico">🧪</span>
+          <div><strong>40 assertions</strong><span>Logic test suite, zero deps</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="dot"></span> Features</span>
+          <h2>Everything you need to <span class="accent">stay on top of money.</span></h2>
+          <p class="section-lead">A complete personal finance toolkit in one quiet, focused app — built for the Philippine wallet first, then the world.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature glass reveal">
+            <div class="feature-ico" style="--c:#22D3EE">🫧</div>
+            <h3>Glassmorphism, done tastefully</h3>
+            <p>Every card is a frosted pane: translucent fill, hairline edge, soft top sheen — real depth from aurora orbs behind it. Dark mode included, cross-fading live.</p>
+          </article>
+
+          <article class="feature glass reveal">
+            <div class="feature-ico" style="--c:#0EA5E9">👛</div>
+            <h3>22 official bank tiles</h3>
+            <p>GCash, Maya, Coins.ph, GrabPay, ShopeePay, BPI, BDO, Metrobank and 15 more. Logo, name and color fill in automatically — just type the balance.</p>
+          </article>
+
+          <article class="feature glass reveal">
+            <div class="feature-ico" style="--c:#34D399">🔔</div>
+            <h3>Purchase detection</h3>
+            <p>Paste any e-wallet or bank SMS and Aiserie reads the amount and direction on-device, then pre-fills a transaction. No message access, no monitoring.</p>
+          </article>
+
+          <article class="feature glass reveal">
+            <div class="feature-ico" style="--c:#A3E635">🧾</div>
+            <h3>Receipt scanning</h3>
+            <p>On-device OCR (Google ML Kit) reads the total from a photo of a receipt and defaults to the Groceries category. Nothing is uploaded.</p>
+          </article>
+
+          <article class="feature glass reveal">
+            <div class="feature-ico" style="--c:#22D3EE">🧠</div>
+            <h3>Finance advisor</h3>
+            <p>Safe-to-spend per day, month-end projections, savings rate, category concentration warnings, momentum and recurring-bill reminders.</p>
+          </article>
+
+          <article class="feature glass reveal">
+            <div class="feature-ico" style="--c:#0EA5E9">✅</div>
+            <h3>Things-to-do</h3>
+            <p>Money chores with springy check-offs, star pinning and a progress ring so the small admin never piles up.</p>
+          </article>
+
+          <article class="feature glass reveal">
+            <div class="feature-ico" style="--c:#34D399">🐷</div>
+            <h3>Savings goals</h3>
+            <p>Piggy banks with progress, contributions and withdrawals — watch the trip, the gadget, the emergency fund fill up.</p>
+          </article>
+
+          <article class="feature glass reveal">
+            <div class="feature-ico" style="--c:#A3E635">📊</div>
+            <h3>Visual reports</h3>
+            <p>Category donut chart, 6-month income/expense bars, month-by-month navigation. Export to CSV and PDF for any period.</p>
+          </article>
+
+          <article class="feature glass reveal">
+            <div class="feature-ico" style="--c:#22D3EE">🔁</div>
+            <h3>Recurring &amp; budgets</h3>
+            <p>Daily/weekly/monthly/yearly schedules with deterministic ids so re-runs never duplicate money. Budget envelopes nudge you at 50/75/90/100%.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wallets showcase -->
+    <section class="section section-alt" id="wallets">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="dot"></span> Wallets</span>
+          <h2>One tap per account. <span class="accent">The brand fills in.</span></h2>
+          <p class="section-lead">Twenty-two Philippine banks and e-wallets ship with brand-correct logos, colors and names — plus unlimited custom wallets.</p>
+        </div>
+
+        <div class="wallet-grid reveal">
+          <div class="wallet-tile" style="--c:#00A6F0"><span class="w-ico">G</span>GCash</div>
+          <div class="wallet-tile" style="--c:#22D3EE"><span class="w-ico">M</span>Maya</div>
+          <div class="wallet-tile" style="--c:#0EA5E9"><span class="w-ico">C</span>Coins.ph</div>
+          <div class="wallet-tile" style="--c:#00B14F"><span class="w-ico">G</span>GrabPay</div>
+          <div class="wallet-tile" style="--c:#EE4C2E"><span class="w-ico">S</span>ShopeePay</div>
+          <div class="wallet-tile" style="--c:#C8102E"><span class="w-ico">B</span>BPI</div>
+          <div class="wallet-tile" style="--c:#00529B"><span class="w-ico">B</span>BDO</div>
+          <div class="wallet-tile" style="--c:#1B4584"><span class="w-ico">M</span>Metrobank</div>
+          <div class="wallet-tile" style="--c:#E2231A"><span class="w-ico">A</span>AUB</div>
+          <div class="wallet-tile" style="--c:#1B3F8B"><span class="w-ico">U</span>UnionBank</div>
+          <div class="wallet-tile" style="--c:#E2231A"><span class="w-ico">S</span>Security Bank</div>
+          <div class="wallet-tile" style="--c:#0A8E3F"><span class="w-ico">L</span>Landbank</div>
+          <div class="wallet-tile" style="--c:#003DA5"><span class="w-ico">R</span>RCBC</div>
+          <div class="wallet-tile" style="--c:#003D7A"><span class="w-ico">P</span>PNB</div>
+          <div class="wallet-tile" style="--c:#D52B1E"><span class="w-ico">C</span>China Bank</div>
+          <div class="wallet-tile" style="--c:#0072CE"><span class="w-ico">E</span>EastWest</div>
+          <div class="wallet-tile" style="--c:#003DA5"><span class="w-ico">P</span>PSBank</div>
+          <div class="wallet-tile" style="--c:#E2231A"><span class="w-ico">M</span>Maribank</div>
+          <div class="wallet-tile" style="--c:#00BFA5"><span class="w-ico">G</span>GoTyme</div>
+          <div class="wallet-tile" style="--c:#00B1EB"><span class="w-ico">C</span>CIMB</div>
+          <div class="wallet-tile" style="--c:#FFD200"><span class="w-ico">T</span>Tonik</div>
+          <div class="wallet-tile" style="--c:#1F8A3B"><span class="w-ico">₱</span>Cash</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Receipt & privacy split -->
+    <section class="section split">
+      <div class="container split-grid">
+        <div class="split-card glass reveal">
+          <div class="split-tag">On-device OCR</div>
+          <h3>Snap a receipt.<br/>Get a transaction.</h3>
+          <p>Point the camera at any grocery or store receipt. Google ML Kit reads the total on your phone — nothing is uploaded — and Aiserie creates a Groceries transaction you can confirm in one tap.</p>
+          <ul class="split-list">
+            <li><span class="check">✓</span> Camera permission only, nothing else</li>
+            <li><span class="check">✓</span> Web/PWA falls back to manual entry</li>
+            <li><span class="check">✓</span> Loads lazily — never bundled into web build</li>
+          </ul>
+        </div>
+
+        <div class="split-card glass reveal" id="privacy">
+          <div class="split-tag accent-2">Privacy shield</div>
+          <h3>Your money stays<br/>on your phone.</h3>
+          <p>No account. No cloud. No tracking. Balances hide behind a branded curtain whenever you leave the app and lift on return, under an optional PIN pad. The only network call is a public GitHub release check for update nudges.</p>
+          <ul class="split-list">
+            <li><span class="check">✓</span> AsyncStorage (native) &amp; localStorage (web)</li>
+            <li><span class="check">✓</span> Backup files written locally — never uploaded</li>
+            <li><span class="check">✓</span> Import validates &amp; sanitizes before writing</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section class="section section-alt" id="download">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="dot"></span> Get the app</span>
+          <h2>Free, forever. <span class="accent">Install in under a minute.</span></h2>
+          <p class="section-lead">No Play Store needed for Android, no Apple Developer fee for iPhone. Two paths, both free, both update automatically.</p>
+        </div>
+
+        <div class="download-grid">
+          <article class="download-card glass reveal">
+            <div class="download-ico" style="--c:#34D399">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 9.5c0-1.3-.6-2.5-1.5-3.4.2-1 .1-2-.3-3 0 0-1-.3-3.2 1.2a11 11 0 0 0-5.8 0C4.6 2.8 3.6 3.1 3.6 3.1c-.4 1-.5 2-.3 3-.9.9-1.5 2.1-1.5 3.4 0 4.5 2.7 5.5 5.2 5.8-.4.4-.7 1.1-.7 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9Z"/></svg>
+            </div>
+            <h3>Android</h3>
+            <p class="download-sub">Signed APK from GitHub Releases. Updating keeps every record; existing installs see the update nudge automatically.</p>
+            <ol class="download-steps">
+              <li><strong>Open</strong> the latest release page.</li>
+              <li><strong>Download</strong> <code>AiserieTracks-v4.1.0.apk</code>.</li>
+              <li><strong>Allow</strong> "install unknown apps" for your browser.</li>
+              <li><strong>Install.</strong> Done — your data is yours.</li>
+            </ol>
+            <a class="btn btn-primary btn-block" href="https://github.com/ViztechStudios/aiserie-tracks/releases/latest" target="_blank" rel="noopener">
+              Download APK →
+            </a>
+          </article>
+
+          <article class="download-card glass reveal">
+            <div class="download-ico" style="--c:#0EA5E9">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 12.04c0-3.16 2.59-4.68 2.7-4.75-1.47-2.15-3.76-2.44-4.57-2.48-1.95-.2-3.8 1.15-4.78 1.15-1 0-2.52-1.12-4.14-1.09C2.18 4.9.32 6.49.05 9.6c-.61 5.02 1.49 12.13 2.59 14.16.66 1 1.83 3.06 3.13 3.01 1.27-.05 1.74-.81 3.27-.81 1.52 0 1.96.81 3.29.79 1.36-.03 2.22-1.02 3.05-2.02.97-1.17 1.37-2.3 1.39-2.36-.03-.01-2.67-1.02-2.7-4.06Z"/><path d="M14.45 2.45c.88-1.06 1.48-2.54 1.31-4.02-1.27.05-2.81.84-3.72 1.9-.81.94-1.53 2.46-1.34 3.91 1.42.11 2.86-.72 3.75-1.79Z"/></svg>
+            </div>
+            <h3>iPhone &amp; iPad</h3>
+            <p class="download-sub">Installable PWA via Safari → Add to Home Screen. Full-screen with its own icon and splash — no App Store, no fee.</p>
+            <ol class="download-steps">
+              <li><strong>Open</strong> the live PWA link in <strong>Safari</strong>.</li>
+              <li><strong>Tap Share</strong> □↑ → <em>Add to Home Screen</em>.</li>
+              <li><strong>Add.</strong> Aiserie launches full-screen.</li>
+              <li>Updates arrive automatically on every push.</li>
+            </ol>
+            <a class="btn btn-primary btn-block" href="https://viztechstudios.github.io/aiserie-tracks/" target="_blank" rel="noopener">
+              Open the PWA →
+            </a>
+          </article>
+        </div>
+
+        <p class="download-foot reveal">
+          Future Play Store / App Store builds use <code>eas build</code> with the same workflows — only when you decide to publish.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container container-narrow">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="dot"></span> FAQ</span>
+          <h2>Questions, <span class="accent">answered.</span></h2>
+        </div>
+
+        <div class="faq">
+          <details class="faq-item reveal">
+            <summary>Is Aiserie Tracks really free?</summary>
+            <p>Yes. Android is a signed APK from GitHub Releases. iPhone is an installable PWA. No ads, no account, no in-app purchases. The source is MIT licensed.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Where is my data stored?</summary>
+            <p>Entirely on your device — AsyncStorage on native, localStorage on web. The only network call is a public GitHub release check for update nudges. Backup files are written locally or shared via the system share sheet; nothing is uploaded.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Does receipt scanning send photos anywhere?</summary>
+            <p>No. OCR uses Google ML Kit, fully on-device. The module is loaded lazily and never bundled into the web build. On web and in Expo Go, the app falls back to manual entry instead of crashing.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Can I switch currencies?</summary>
+            <p>The default is PHP, but you can switch to USD, EUR, GBP, JPY, SGD and more in Settings. Reports and exports reflect your choice.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>What happens if I update the app?</summary>
+            <p>Updating keeps every record. On boot the app checks GitHub Releases; if a newer version exists, a glass "Update available" card appears with a deep link to the latest release. There's a 3-day snooze and a manual check in Settings.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>How do backups work?</summary>
+            <p>One JSON file with everything. Import validates structure and sanitizes every entry (drops corrupt rows, dedupes ids, clamps values) before writing — then merges without duplicating, or replaces everything after a double confirmation.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Is the app crash-proof?</summary>
+            <p>Malformed records are repaired at load or paused, never fatal. A root error boundary swaps any render bug for a branded recovery screen. Every money counter runs on disjoint animation-driver graphs.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA strip -->
+    <section class="cta-strip">
+      <div class="container cta-inner reveal">
+        <div>
+          <h2>Quiet money. <span class="accent">Yours.</span></h2>
+          <p>Install Aiserie Tracks in under a minute — Android, iPhone or the web. No account, ever.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary btn-lg" href="#download">Get the app</a>
+          <a class="btn btn-ghost btn-lg" href="https://github.com/ViztechStudios/aiserie-tracks" target="_blank" rel="noopener">Read the source</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <img src="logo.svg" alt="" class="brand-mark" width="30" height="30" />
+          <span class="brand-text">Aiserie<span class="brand-dot">.</span>Tracks</span>
+        </a>
+        <p>A jungle-green personal finance tracker for Android, iPhone and the web. Built by ViztechStudios.</p>
+      </div>
+
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#wallets">Wallets</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get it</h4>
+          <a href="https://github.com/ViztechStudios/aiserie-tracks/releases/latest" target="_blank" rel="noopener">Android APK</a>
+          <a href="https://viztechstudios.github.io/aiserie-tracks/" target="_blank" rel="noopener">iPhone PWA</a>
+          <a href="#download">All platforms</a>
+        </div>
+        <div class="footer-col">
+          <h4>Source</h4>
+          <a href="https://github.com/ViztechStudios/aiserie-tracks" target="_blank" rel="noopener">GitHub repo</a>
+          <a href="https://github.com/ViztechStudios/aiserie-tracks/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>
+          <a href="https://github.com/ViztechStudios/aiserie-tracks/releases" target="_blank" rel="noopener">Releases</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> ViztechStudios. MIT licensed. Made with 🐾</span>
+      <span class="footer-version">v4.1.0 · Orbit &amp; Frost</span>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
