@@ -1,8 +1,13 @@
 # Aiserie Tracks landing page — nginx config template.
-# ${PORT} is substituted by the nginx docker image entrypoint (envsubst),
-# so the same image works on Render.com, Codespaces and plain Docker.
+# ${PORT} is substituted by the nginx docker image entrypoint (envsubst).
+# IMPORTANT: envsubst only replaces the exact form ${PORT} with the value of
+# the PORT environment variable. Shell-style defaults like ${PORT:-80} are
+# NOT expanded here — nginx would see the literal string and fail with
+# "invalid port". The Dockerfile guarantees PORT is always set (ENV
+# PORT=10000), so the same image works on Render.com, Codespaces and plain
+# Docker alike.
 server {
-    listen ${PORT:-80};
+    listen ${PORT};
     server_name _;
 
     root /usr/share/nginx/html;
