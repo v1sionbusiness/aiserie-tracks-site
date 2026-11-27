@@ -17,10 +17,12 @@ https://v1sionbusiness.github.io/aiserie-tracks-site/
 The "Download APK" buttons link directly to the signed APK:
 
 ```
-https://github.com/ViztechStudios/aiserie-tracks/releases/latest/download/AiserieTracks-v4.1.0.apk
+https://github.com/ViztechStudios/aiserie-tracks/releases/latest/download/AiserieTracks-v4.2.0.apk
 ```
 
-(Update the filename in `index.html` when a new version is released.)
+(Update the filename in `index.html` when a new version is released — the
+`releases/latest/download/` URL only resolves while the filename matches the
+asset in the newest release.)
 
 ## Files
 
@@ -31,7 +33,7 @@ https://github.com/ViztechStudios/aiserie-tracks/releases/latest/download/Aiseri
 | `script.js` | Mobile nav, scroll reveals, smooth-scroll anchors |
 | `logo.svg` | Orbit-A monogram logo (vector, scalable) |
 | `favicon.svg` | Favicon version of the logo |
-| `screenshots/` | Real app screenshots (SVG-wrapped JPEGs) |
+| `screenshots/` | Real app screenshots (SVG-wrapped JPEGs, brand labels masked by privacy chips) |
 | `Dockerfile` | nginx-based container — works on Render.com, Codespaces, Fly.io, plain Docker |
 | `nginx.conf.template` | Server config with ${PORT} support |
 | `.github/workflows/jekyll-gh-pages.yml` | Deploys `main` to GitHub Pages |
