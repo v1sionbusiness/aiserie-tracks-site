@@ -1,0 +1,30 @@
+# Aiserie Tracks landing page — nginx config template.
+# ${PORT} is substituted by the nginx docker image entrypoint (envsubst),
+# so the same image works on Render.com, Codespaces and plain Docker.
+server {
+    listen ${PORT:-80};
+    server_name _;
+
+    root /usr/share/nginx/html;
+    index index.html;
+
+    # Security headers
+    add_header X-Content-Type-Options nosniff;
+    add_header X-Frame-Options SAMEORIGIN;
+    add_header Referrer-Policy strict-origin-when-cross-origin;
+
+    # Compression
+    gzip on;
+    gzip_comp_level 5;
+    gzip_types text/plain text/css application/javascript image/svg+xml application/json;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    # Cache static assets
+    location ~* \.(svg|css|js|jpg|png|woff2)$ {
+        expires 7d;
+        add_header Cache-Control "public, max-age=604800, immutable";
+    }
+}
